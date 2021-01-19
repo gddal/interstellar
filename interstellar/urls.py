@@ -20,5 +20,7 @@ from .views import index, create_order
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('order', create_order, name="create_order")
+    path('order', create_order, name="create_order"),
+    path('preview', create_order)
+
 ]

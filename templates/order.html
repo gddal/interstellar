@@ -5,9 +5,20 @@
     <title>Order</title>
 </head>
 <body>
-<form action="/views/" method="post">
+<form action="preview" method="post">
     {% csrf_token %}
-    {{ form }}
+
+    {{ form.as_p }}
+    <!--<label>Email:</label>
+    <input type="email" id="email"><br>
+    <label>X Coordinates:</label>
+    <input type="number" id="coordinatesX"><br>
+    <label>Y Coordinates:</label>
+    <input type="number" id="coordinatesY"><br>
+    <label>Date:</label>
+    <input type="datetime-local" id="date"><br>
+    <label>With Constellations:</label>
+    <input type="checkbox" id="constellations"><br>-->
     <input type="submit" value="Submit">
 </form>
 </body>
