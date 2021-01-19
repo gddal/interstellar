@@ -19,7 +19,7 @@ def create_order(request):
             # process the data in form.cleaned_data as required
             # se der match ver pedidos, TEMPORARIO
             # redirect to a new URL:
-            return render(request, 'templates/preview.html')
+            return render(request, 'preview.html')
         return HttpResponse({'Bad Request': 'Invalid data...'})
 
 
