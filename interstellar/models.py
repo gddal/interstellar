@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 
+
 class Orders(models.Model):
     total = models.FloatField()
     email = models.CharField(max_length=50)

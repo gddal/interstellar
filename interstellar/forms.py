@@ -12,8 +12,8 @@ class OrderForm(forms.ModelForm):
         # fields = 'all'
         exclude = ['created_at', 'updated_at', 'total']
         widgets = {"email": forms.EmailInput(attrs={"type": "email"}),
-                   "coordinatesX": forms.NumberInput(attrs={"max": "90", "min": "0"}),
-                   "coordinatesY": forms.NumberInput(attrs={"max": "180", "min": "0"}),
+                   "coordinatesX": forms.NumberInput(attrs={"max": "90", "min": "-90"}),
+                   "coordinatesY": forms.NumberInput(attrs={"max": "180", "min": "-180"}),
                    "date_hour_product": DateTimeInput(attrs={"type": "datetime-local"})}
 
 #    email = forms.EmailInput(name="email", label="email", max_length=50)
